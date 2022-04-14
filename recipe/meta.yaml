@@ -1,5 +1,5 @@
 {% set name = "python-asana" %}
-{% set version = "0.10.12" %}
+{% set version = "0.10.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Asana/python-asana/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 65bcd2a6146ee1a3b5eebe659f9c8f36dcbcecd53434d1919122a344f7296a8d
+  sha256: dcd1af75376f3d443664e7fa932919ba4ee4f926de63dbbda2d951d417ad3375
 
 build:
   noarch: python

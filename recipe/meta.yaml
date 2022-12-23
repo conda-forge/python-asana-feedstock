@@ -1,13 +1,13 @@
 {% set name = "python-asana" %}
-{% set version = "2.0.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/Asana/python-asana/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: cf985f9f805260734935ea9cee82e16e8e83b248b2851f1b7a3ab17daf24c9fa
+  url: https://pypi.io/packages/source/a/asana/asana-{{ version }}.tar.gz
+  sha256: 614a3c57fec784e55695660c7bfc7bacbf297fc36efd1f613570d161841b39b4
 
 build:
   noarch: python
@@ -22,7 +22,6 @@ requirements:
     - python >=3.4
     - requests >=2.20.0,<3
     - requests-oauthlib >=0.8.0,<2.0
-    - six >=1.10,<2
 
 test:
   imports:

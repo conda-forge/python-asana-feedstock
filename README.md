@@ -1,11 +1,11 @@
-About python-asana
-==================
+About python-asana-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-asana-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/asana/python-asana
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-asana-feedstock/blob/main/LICENSE.txt)
 
 Summary: Asana API client
 

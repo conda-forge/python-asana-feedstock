@@ -35,7 +35,7 @@ test:
 
 about:
   home: http://github.com/asana/python-asana
-  summary: Asana
+  summary: Official Python client library for the Asana API v1
   license: MIT
   license_file: LICENSE
   license_family: MIT

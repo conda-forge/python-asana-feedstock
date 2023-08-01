@@ -1,5 +1,5 @@
 {% set name = "asana" %}
-{% set version = "3.2.1" %}
+{% set version = "4.0.1" %}
 
 package:
   name: python-asana
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asana-{{ version }}.tar.gz
-  sha256: 11b2c69101284ee3a4d78589b1cd6a87885a6b0c9510b62105fb3b79d5204f60
+  sha256: 7358d586cc39a77a7bcfb63dc2d8e3087da969909826a390743f5d13396af214
 
 build:
   noarch: python
@@ -20,8 +20,10 @@ requirements:
     - pip
   run:
     - python >=3.4
-    - requests >=2.20.0,<3
-    - requests-oauthlib >=0.8.0,<2.0
+    - certifi >=2017.4.17
+    - python-dateutil >=2.1
+    - six >=1.10
+    - urllib3 >=1.23
 
 test:
   imports:
@@ -33,7 +35,7 @@ test:
 
 about:
   home: http://github.com/asana/python-asana
-  summary: Asana API client
+  summary: Official Python client library for the Asana API v1
   license: MIT
   license_file: LICENSE
   license_family: MIT

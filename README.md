@@ -7,7 +7,7 @@ Home: http://github.com/asana/python-asana
 
 Package license: MIT
 
-Summary: Asana API client
+Summary: Official Python client library for the Asana API v1
 
 Development: http://github.com/asana/python-asana
 

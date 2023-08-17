@@ -1,5 +1,5 @@
 {% set name = "asana" %}
-{% set version = "4.0.6" %}
+{% set version = "4.0.7" %}
 
 package:
   name: python-asana
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asana-{{ version }}.tar.gz
-  sha256: db99c52f6ca9279278bc8754c01d2f06989faa1d5d1507bc74d7364da88f8e74
+  sha256: 8d9d5afa0b4a533e0d3bf8fe4e4087a8d18ff10c24b8871023313f4156fd6280
 
 build:
   noarch: python

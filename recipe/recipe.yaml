@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  name: asana
+  version: "5.2.4"
+
+package:
+  name: python-asana
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/asana-${{ version }}.tar.gz
+  sha256: 7e0955e92ec3be9efe113817f957456b39e96a760362e8369e23db9ecb9c1a42
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - certifi >=2017.4.17
+    - python-dateutil >=2.1
+    - six >=1.10
+    - urllib3 >=1.23
+
+tests:
+  - python:
+      imports:
+        - asana
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  summary: Official Python client library for the Asana API v1
+  license: MIT
+  license_file: LICENSE
+  homepage: http://github.com/asana/python-asana
+  repository: http://github.com/asana/python-asana
+  documentation: http://github.com/asana/python-asana
+
+extra:
+  recipe-maintainers:
+    - xylar

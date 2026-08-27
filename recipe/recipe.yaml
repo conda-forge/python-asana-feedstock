@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: asana
-  version: "5.2.5"
+  version: "5.3.0"
 
 package:
   name: python-asana
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/asana-${{ version }}.tar.gz
-  sha256: 5b4610830d5480f12508e6cf154fa2c79adc6d10613daf45c09d3e869f7cf61f
+  sha256: c267ce27de2fd2283111463ca44b2f2ac862c81f7f09918db6721727d7bbb0ee
 
 build:
   number: 0
